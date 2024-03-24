@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templatemo-style.css">
+
+    <title>Cenik</title>
+    <meta charset="utf-8" />
+	   <style>
+        form {
+            margin-bottom: 120px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        table tr:hover {
+            background-color: #eb5424;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar-default">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Začetna stran</a></li>
+                <li><a href="kolokviji.html">Kolokviji</a></li>
+                <li><a href="mnenja.html">Mnenja o tutorjih</a></li>
+                <li><a href="zgodovina.html">Zgodovina tečajev</a></li>
+                <li><a href="termini.html">Termini(tutor)</a></li>
+                <li><a href="predmeti.html">Predmeti(tutor)</a></li>
+				<li><a href="gradiva.html">Pregled naloženih gradiv (tutor)</a></li>
+            </ul>
+        </div>
+    </nav>
+<section id="history" class="tm-history">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow bounce">
+                <div class="title">
+                    <h2 class="tm-portfolio-title">Pregled <strong>mnenj in ocen</strong></h2>
+                </div>
+                <hr />
+                <div class="iso-section">
+                    <table class="center">
+                        <tr>
+                            <td><strong>Ime tutorja</strong></td>
+                            <td><strong>Mnenje</strong></td>
+                            <td><strong>Ocena</strong></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Tevž Starovasnik</td>
+							<td>Odličen tutor.</td>
+							<td>5</td>
+						<span class="completed"></span></td>
+                        </tr>
+                        <tr>
+						<td></td>
+							<td>4</td>
+						<span class="completed"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Neli Šijanec</td>
+							<td>Zelo zadovoljna, ni boljše tutorice. Priporocam.</td>
+							<td>5</td>
+						<span class="completed"></span></td>
+                        </tr>
+                        <tr>
+						<td rowspan="2">Dunja Panič</td>
+						<td>Vreden vsakega centa. Opravil ispit z 9.</td>
+							<td>5</td>
+						<span class="completed"></span></td>
+                        </tr>
+                        <tr>
+							<td>Solidna storitev, če je res sila.</td>
+							<td>3</td>
+						<span class="completed"></span></td>
+                        </tr>
+                        <tr>
+							<td>Jaka Waldhütter</td>
+							<td></td>
+							<td>4</td>
+						<span class="completed"></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="portfolio" class="tm-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounce">
+                    <div class="title">
+                        <h2 class="tm-portfolio-title">Oceni tutorja <strong>ali podaj mnenje</strong></h2>
+                    </div>
+                    <hr />
+
+                    <div class="iso-section">
+                        <div class="iso-box html photoshop wordpress mobile col-md-3 col-sm-3 col-xs-12">
+                            <div class="portfolio-thumb">
+                                <img src="slike/feri-skupinska.jpg" class="fluid-img" alt="portfolio img">
+                                <div class="portfolio-overlay">
+                                     <div class="izbira">
+        <h2 class="title">Mnenja o <strong>tutorjih</strong></h2>
+        <hr />
+		<img src="slike/feri-skupinska.jpg" alt="Letošnji tutorji" width="700" height="600">
+        <form>
+            <p>Tutor, ki ga želiš oceniti:</p> <select name="seznam_tutorjev" required>
+                <option selected value="1">Tevž Starovasnik</option>
+                <option selected value="2">Nea Nikolič</option>
+                <option selected value="3">Luka Mlinarič Fekonja</option>
+                <option selected value="4">Neli Šijanec</option>
+                <option selected value="5">Adrijana Savevska</option>
+                <option selected value="6">Matevž Pečnik</option>
+                <option selected value="7">Vid Pejovnik</option>
+                <option selected value="8">Vid Čabrian</option>
+                <option selected value="9">Matjaž Remic</option>
+                <option selected value="10">Luka Lah</option>
+                <option selected value="11">Jaša Jernej Rakun Kokalj</option>
+                <option selected value="12">Dunja Panič</option>
+                <option selected value="13">Jaka Waldhütter</option>
+                <option selected value="14">Matevž Šavora</option>
+                <option selected value="15">Ana Gjorcheska</option>
+                <option selected value="16">Milica Japranin</option>
+                <option selected value="17">Nadica Uzunova</option>
+                <option selected value="18">Anastasija Džudžar</option>
+            </select>
+
+            <br /><br /><br /><br /><br /><br />
+
+            <p>Oceni izbranega tutorja:</p> <select name="seznam_predmetov" placeholder="1 (zelo zlabo) - 5 (zelo dobro)">
+                <option selected value="1">1</option>
+                <option selected value="2">2</option>
+                <option selected value="3">3</option>
+                <option selected value="4">4</option>
+                <option selected value="5">5</option>
+            </select>
+			<br /><br /><br /><br /><br /><br />
+			
+			<p>Napiši mnenje o izbranem tutorju:</p>
+				<input type="text" placeholder="Napisite mnenje dolgo do 1000 besed.">
+				
+				<br /><br /><br /><br /><br /><br />
+				
+			<input type="submit" class="tm-view-more-btn" value="Potrdi">
+			
+			 <br /><br /><br /><br /><br /><br />
+			
+        </form>
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /><br />
+    <!--Noga strani-->
+    <div class="noga">
+        <hr />
+        <p>Aleš Fon Cafnik, Filip Rap &copy; 2023</p>
+    </div>
+
+</body>
+
+</html>

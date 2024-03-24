@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templatemo-style.css">
+
+    <title>Rezervacija - 2. stran</title>
+    <meta charset="utf-8" />
+
+    <style>
+        .title {
+            padding-bottom: 40px;
+        }
+        form {
+            margin-bottom: 120px;
+        }
+		input[type="file"] {
+  color: #eb5424;
+}
+		input[type="date"] {
+  color: #eb5424;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar-default">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Začetna stran</a></li>
+                <li><a href="cenik.html">Cenik</a></li>
+                <li><a href="mnenja.html">Mnenja o tutorjih</a></li>
+                <li><a href="zgodovina.html">Zgodovina tečajev</a></li>
+                <li><a href="kolokviji.html">Kolokviji</a></li>
+                <li><a href="termini.html">Termini(tutor)</a></li>
+                <li><a href="predmeti.html">Predmeti(tutor)</a></li>
+				<li><a href="gradiva.html">Pregled naloženih gradiv (tutor)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="izbira">
+        <h2 class="title">Izberi <strong>vrsto tutorstva, termin</strong> in <strong>gradivo</strong></h2>
+        <hr />
+        <form>
+            <p>Izberi željeno vrsto tutorstva:</p> <select name="seznam_programov" required>
+                <option selected value="1">V skupini in online</option>
+                <option selected value="2">V skupini in v živo</option>
+                <option selected value="3">Individualno in online</option>
+                <option selected value="4">Individualno in v živo</option>
+            </select>
+
+            <br /><br /><br /><br /><br /><br />
+				<p>Izberite željeni datum tutorskih vaj in tutor ti bo posredoval možne termine v okviru tega datuma:</p>
+				<label for="date"></label><br>
+				<input type="date" id="date" name="date" required><br>
+
+            <br /><br /><br /><br /><br /><br />
+			<p>Po želji naloži dodatno gradivo, da se  bo tutor lahko bolje pripravil na tutorske vaje:</p>
+		<label for="myfile"></label>
+		<input type="file" id="myfile" name="myfile">
+        </form>
+    </div>
+
+    <a href="index.html" class="tm-view-more-btn">Zaključi z rezervacijo</a>
+
+    <br /><br /><br /><br /><br /><br />
+    <!--Noga strani-->
+    <hr />
+    <div class="noga">
+        <p>Aleš Fon Cafnik, Filip Rap &copy; 2023</p>
+    </div>
+
+</body>
+
+</html>
